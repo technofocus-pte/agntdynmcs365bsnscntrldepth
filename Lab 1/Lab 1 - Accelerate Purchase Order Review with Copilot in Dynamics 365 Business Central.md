@@ -74,14 +74,6 @@ subsequent exercises in this lab.
 
     ![](./media/image8.png)
 
-    ![](./media/image9.png)
-
-    ![](./media/image10.png)
-
-    ![](./media/image11.png)
-
-    ![](./media/image12.png)
-
 ## Exercise 2: Create a Sandbox environment
 
 Note: When a Business Central trial is activated, a Production
@@ -92,19 +84,19 @@ required demo data for future lab exercises, sandbox environments are
 created using a previous release version specifically for lab guide
 purposes.
 
-1.  From the top bar of Business Central, click Settings, and then
-    select Admin Center. The Business Central Admin Center opens in a
+1.  From the top bar of Business Central, click **Settings**, and then
+    select **Admin Center**. The Business Central Admin Center opens in a
     new browser tab.
 
     ![](./media/image13.png)
 
-2.  From the top menu, click New to start creating a new environment.
+2.  From the top menu, click **New** to start creating a new environment.
 
     ![](./media/image14.png)
 
 3.  In the Create environment page, enter the following values:
 
-    - Name: cronus_sandbox
+    - Name: +++cronus_sandbox+++
 
     - Type: Sandbox
 
@@ -112,20 +104,20 @@ purposes.
 
     - Version: 26.0
 
-4.  After entering the details, click Create. The environment creation
+4.  After entering the details, click **Create**. The environment creation
     process begins and the status shows that the environment is being
     configured.
 
     ![](./media/image15.png)
 
 5.  While the sandbox environment is being created, select the
-    Production environment from the environment list.
+    **Production environment** from the environment list.
 
     ![](./media/image16.png)
 
     ![](./media/image17.png)
 
-6.  Click the URL of the Production environment to open it.
+6.  Click the **URL** of the Production environment to open it.
 
     ![](./media/image18.png)
 
@@ -163,7 +155,7 @@ application.
 6.  Copilot and agent capabilities are confirmed to be active and
     available for use in subsequent exercises.
 
-7.  Navigate to the business central home page, press the Alt + Q button
+7.  Navigate to the business central home page, press the **Alt + Q** button
     on key board and enter +++Contoso Demo Tool+++ in the field, then
     select the option **Contoso Demo Tool.**
 
@@ -174,7 +166,7 @@ application.
 
     ![](./media/image23.png)
 
-9.  Press OK to complete the demo data setup.
+9.  Press **OK** to complete the demo data setup.
 
     ![](./media/image24.png)
 
@@ -215,8 +207,7 @@ generate insights without manual filtering or calculations.
 
     ![](./media/image29.png)
 
-9.  At the bottom of the analysis window, locate the **Add more
-    details** field.
+9.  At the bottom of the analysis window, locate the **Add more details** field.
 
 10. Enter the following text:
 
@@ -244,7 +235,7 @@ generate insights without manual filtering or calculations.
 
 16. After the group by statement, type:
 
-> +++\[**average amount per vendor name\]+++**
+> +++[**average amount per vendor name]+++**
 
 17. Click **Generate** to run the analysis.
 
