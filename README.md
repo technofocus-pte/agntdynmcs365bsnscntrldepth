@@ -1,7 +1,6 @@
 # 🚀 Microsoft Copilot Labs – Dynamics 365 Business Central
 
-This repository contains hands-on lab exercises demonstrating how Microsoft Copilot enhances productivity, automation, and decision-making inside  
-**:contentReference[oaicite:0]{index=0}**.
+This repository contains hands-on lab exercises demonstrating how Microsoft Copilot enhances productivity, automation, and decision-making inside.
 
 These labs walk through real-world business scenarios across Purchasing, Sales, Finance, Inventory, e-Documents, and Marketing Content Creation.
 
