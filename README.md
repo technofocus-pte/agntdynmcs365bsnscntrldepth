@@ -1,220 +1,76 @@
-# 🚀 Microsoft Copilot Labs – Dynamics 365 Business Central
+# Copilot in Dynamics 365 Business Central – Hands-on Lab Series
 
-This repository contains hands-on lab exercises demonstrating how Microsoft Copilot enhances productivity, automation, and decision-making inside.
+## Overview
 
-These labs walk through real-world business scenarios across Purchasing, Sales, Finance, Inventory, e-Documents, and Marketing Content Creation.
+This repository contains eight hands-on lab guides that show how Microsoft Copilot and AI agents in Dynamics 365 Business Central help with everyday purchasing, sales, finance, and inventory work. Each lab walks you step by step through a real business scenario in the **CRONUS** demo company, with screenshots for every step.
 
----
+## Labs
 
-## 📌 Repository Overview
+| Lab | Title | Exercises | Estimated Time |
+|:---:|-------|:---------:|:--------------:|
+| 1 | [Accelerate Purchase Order Review with Copilot in Dynamics 365 Business Central](./Lab%201/Lab%201%20-%20Accelerate%20Purchase%20Order%20Review%20with%20Copilot%20in%20Dynamics%20365%20Business%20Central.md) | 5 | 45 minutes |
+| 2 | [Improve Order Fulfillment and Customer Satisfaction using Suggest Substitute Items and Summarize Records with Copilot](./Lab%202/Lab%202%20-%20Improve%20Order%20Fulfillment%20and%20Customer%20Satisfaction%20using%20Suggest%20substitute%20items%20and%20summarize%20records%20with%20Copilot.md) | 2 | 20 minutes |
+| 3 | [Map E-Documents to Purchase Order Lines with Copilot in Dynamics 365 Business Central](./Lab%203/Lab%203%20-%20Map%20e-documents%20to%20purchase%20order%20lines%20with%20Copilot%20in%20Dynamics%20365%20Business%20Central.md) | 2 | 25 minutes |
+| 4 | [Creating and Enhancing Item Marketing Text with Copilot in Business Central](./Lab%204/Lab%204%20-%20Creating%20and%20Enhancing%20Item%20Marketing%20Text%20with%20Copilot%20in%20Business%20Central.md) | 2 | 20 minutes |
+| 5 | [Analyze Open Sales Invoices Using Copilot Chat and Analysis Assist in Dynamics 365 Business Central](./Lab%205/Lab%205%20-%20Analyze%20Open%20Sales%20Invoices%20Using%20Copilot%20Chat%20and%20Analysis%20Assist.md) | 4 | 30 minutes |
+| 6 | [Vendor Invoice Automation for SMB Finance Teams with Copilot in Dynamics 365 Business Central](./Lab%206/Lab%206%20-%20Vendor%20Invoice%20Automation%20for%20SMB%20Finance%20Teams%20with%20Copilot%20in%20Dynamics%20365%20Business%20Central.md) | 3 | 45 minutes |
+| 7 | [Automating Sales Order Capture for Faster Order Processing with the Sales Order Agent](./Lab%207/Lab%207%20-%20Automating%20Sales%20Order%20Capture%20for%20Faster%20Order%20Processing%20with%20the%20Sales%20Order%20Agent.md) | 2 | 30 minutes |
+| 8 | [Configure and Activate Expense Agent for Automated Expense Processing in Dynamics 365 Business Central](./Lab%208/Lab%208%20-%20Configure%20and%20Activate%20Expense%20Agent%20for%20Automated%20Expense%20Processing.md) | 2 | 30 minutes |
 
-This lab collection is designed for:
+> [!IMPORTANT]
+> Complete **Lab 1** first. It activates the Business Central trial, verifies Copilot and agent capabilities, and generates the demo data used by the later labs.
 
-- Functional Consultants  
-- ERP Administrators  
-- Finance Teams  
-- Sales Teams  
-- Business Users  
-- Microsoft Certification Learners  
+## What You Will Learn
 
-Each lab provides structured, step-by-step implementation guidance using Copilot features within Business Central.
+- **Copilot features:** Analyze list and Analysis Assist, Autofill, Copilot Chat and the prompt guide, substitute item suggestions, record summaries, e-document line mapping, marketing text drafting, and number series generation.
+- **AI agents:** the Payables Agent (vendor invoices), the Sales Order Agent (customer inquiries and quotes), and the Expense Agent (expense reports).
 
----
+## Prerequisites
 
-# 📚 Lab Modules
+- Admin tenant credentials for Dynamics 365 Business Central.
+- Microsoft Edge or another supported browser.
+- A personal email account (for example, Outlook.com) for the agent labs (Labs 6 and 7).
+- The file **Fabrikam Invoice US D365F** in **C:\labfiles** (Lab 6).
+- A **cronus_sandbox** environment (Lab 3).
+- A Microsoft Exchange license for the signed-in user (Lab 8).
 
----
+## Repository Structure
 
-## 🧾 Lab 1 – Accelerate Purchase Order Review with Copilot
+```
+Business_Central_Copilot_Lab_Guides/
+├── README.md
+├── Lab 1/
+│   ├── Lab 1 - <full lab title>.md
+│   └── media/
+│       ├── image1.png
+│       └── ...
+├── Lab 2/
+│   ├── Lab 2 - <full lab title>.md
+│   └── media/
+└── ... (Lab 3 to Lab 8 follow the same pattern)
+```
 
-### 🎯 Objective
-Use Copilot to analyze, summarize, sort, group, and autofill purchase order data.
+Each lab folder contains one markdown guide and a `media` folder with all of its screenshots. Images are referenced with relative paths, for example `![](./media/image1.png)`, so keep each `.md` file and its `media` folder together.
 
-### 🔍 Key Topics Covered
-- Activating Business Central Trial
-- Creating Sandbox Environment
-- Verifying Copilot & Agent Capabilities
-- Analyze List using Copilot
-- Grouping & Sorting Purchase Orders
-- Autofill Purchase Order Fields
-- Chat with Copilot
+## Lab Guide Format
 
-### ✅ Skills Gained
-- AI-driven purchase analysis  
-- Conversational ERP interaction  
-- Faster purchase order review  
-- Intelligent data grouping  
+Every guide follows the same structure: Overview, Objectives, Prerequisites, Estimated Time, Exercises (split into Tasks), a Result checkpoint at the end of each exercise, Summary, and Key Takeaways.
 
----
+### Conventions
 
-## 💰 Lab 2 – Vendor Invoice Automation for Finance Teams
+| Element | Meaning |
+|---------|---------|
+| `+++text+++` | A value to type or copy into the lab environment, such as a prompt, URL, or code. |
+| **Bold text** | A UI element to select, such as a button, field, page, or menu. |
+| `> **✅ Result:**` | A checkpoint confirming what you accomplished in the exercise. |
+| `> [!NOTE]` | Helpful background information. |
+| `> [!TIP]` | A suggestion to work faster or get better results. |
+| `> [!IMPORTANT]` | Information you need to complete the lab correctly. |
+| `> [!WARNING]` | An action that can cause errors or unwanted changes if done incorrectly. |
 
-### 🎯 Objective
-Automate vendor invoice processing using the Payables Agent.
+> [!NOTE]
+> Copilot and agent responses are AI-generated, so your results may differ slightly from the screenshots. Always review AI-generated content before saving or posting.
 
-### 🔍 Key Topics Covered
-- Activate Payables Agent
-- Configure Mailbox Integration
-- Process Invoice Emails
-- Review AI-Generated Purchase Drafts
-- Post Purchase Invoices
-- Generate & Modify Number Series using Copilot
+## Total Duration
 
-### ✅ Skills Gained
-- End-to-end AP automation  
-- Reduced manual invoice entry  
-- Controlled AI-assisted posting  
-- Smart number series management  
-
----
-
-## 📦 Lab 3 – Improve Order Fulfillment with AI Suggestions
-
-### 🎯 Objective
-Improve inventory availability and customer satisfaction using substitute item suggestions and AI summaries.
-
-### 🔍 Key Topics Covered
-- Suggest Substitute Items
-- Confidence Score Filtering
-- Remove Low-Confidence Matches
-- Insert Medium/High-Confidence Items
-- Summarize Purchase Orders
-
-### ✅ Skills Gained
-- Inventory optimization  
-- Faster purchasing review  
-- AI-supported fulfillment decisions  
-- Improved order accuracy  
-
----
-
-## 📩 Lab 4 – Automating Sales Order Capture with Sales Agent
-
-### 🎯 Objective
-Automate customer inquiry handling and quotation generation.
-
-### 🔍 Key Topics Covered
-- Activate Sales Agent
-- Configure Mailbox for Inquiries
-- Process Customer Emails
-- AI-Generated Quotation Draft
-- Send Automated Responses
-
-### ✅ Skills Gained
-- Automated sales communication  
-- Faster quotation turnaround  
-- Reduced manual processing  
-- Enhanced customer responsiveness  
-
----
-
-## 📄 Lab 5 – Map E-Documents to Purchase Orders
-
-### 🎯 Objective
-Use Copilot to automatically match e-document lines with purchase order lines.
-
-### 🔍 Key Topics Covered
-- Generate Demo Data
-- Review Linked Purchase Orders
-- Auto-Match with Copilot
-- Compare Manual vs Automatic Matching
-- Save Final Mapping
-
-### ✅ Skills Gained
-- Automated document matching  
-- Reduced procurement errors  
-- Streamlined e-document workflows  
-- Improved financial accuracy  
-
----
-
-## ✍️ Lab 6 – AI-Powered Item Marketing Text Creation
-
-### 🎯 Objective
-Generate, refine, and finalize marketing text using Copilot.
-
-### 🔍 Key Topics Covered
-- Generate Draft Marketing Text
-- Select Product Attributes
-- Regenerate Suggestions
-- Adjust Tone & Format
-- Review & Finalize Content
-
-### ✅ Skills Gained
-- AI-assisted content creation  
-- Brand-aligned messaging  
-- Faster product documentation  
-- Human-in-the-loop validation  
-
----
-
-# 🛠️ Prerequisites
-
-- Business Central Trial Environment  
-- Admin Tenant Access  
-- Sandbox Environment (Recommended: cronus_sandbox)  
-- Contoso Demo Tool Data  
-- Email Account (for Payables & Sales Agent testing)  
-
----
-
-# 🧠 Copilot Capabilities Demonstrated
-
-- Analyze List  
-- Group & Aggregate Data  
-- Chat-Based Queries  
-- Autofill Suggestions  
-- Confidence Scoring  
-- Email-to-Document Automation  
-- Number Series Generation  
-- AI Content Drafting  
-- Document Summarization  
-
----
-
-# 🏗️ Environment Setup Overview
-
-| Component | Purpose |
-|------------|----------|
-| Production Environment | Core functional scenarios |
-| Sandbox Environment | Demo data testing |
-| Payables Agent | Invoice automation |
-| Sales Agent | Inquiry automation |
-| Copilot Engine | AI-powered assistance |
-
----
-
-# 📈 Business Value
-
-By completing these labs, users will understand how Copilot:
-
-- Accelerates purchasing workflows  
-- Automates accounts payable processes  
-- Enhances sales responsiveness  
-- Improves inventory decision-making  
-- Simplifies e-document processing  
-- Speeds up marketing content creation  
-
----
-
-# 🎓 Learning Outcome
-
-After completing all labs, participants will be able to confidently:
-
-- Configure Copilot-powered agents  
-- Automate purchasing and sales workflows  
-- Use AI prompts effectively inside Business Central  
-- Review and validate AI-generated business documents  
-- Implement AI features in real-world ERP scenarios  
-
----
-
-## 📌 License
-
-This repository is intended for educational and demonstration purposes.
-
----
-
-**Author:** Vishwjeet Singh Chauhan  
-**Platform:** Microsoft Dynamics 365 Business Central  
-**Focus Area:** Copilot for ERP Automation
+Approximately **4 hours** to complete all eight labs.
